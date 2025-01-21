@@ -1,4 +1,4 @@
-// Өгөгдсөн гурвалжны периметрийг ол.
+
 
 // Input
 // Гурвалжны талууд бүхэл тоогоор нэг мөрөнд зайгаар тусгаарлагдан өгөгдөнө.
@@ -24,7 +24,6 @@ class Triangle {
 
         int perimeter = side1 + side2 + side3;
 
-        // Output the perimeter
         System.out.println("The perimeter of the triangle is: " + perimeter);
     }
 }

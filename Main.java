@@ -1,3 +1,4 @@
+package lab_01;
 
 class Main {
 
