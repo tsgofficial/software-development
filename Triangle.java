@@ -1,5 +1,4 @@
 
-
 // Input
 // Гурвалжны талууд бүхэл тоогоор нэг мөрөнд зайгаар тусгаарлагдан өгөгдөнө.
 // Output
@@ -12,18 +11,21 @@
 import java.util.Scanner;
 
 class Triangle {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    try {
+      System.out.println("Enter the sides of the triangle separated by spaces:");
 
-        System.out.println("Enter the sides of the triangle separated by spaces:");
+      int side1 = scanner.nextInt();
+      int side2 = scanner.nextInt();
+      int side3 = scanner.nextInt();
 
-        int side1 = scanner.nextInt();
-        int side2 = scanner.nextInt();
-        int side3 = scanner.nextInt();
+      int perimeter = side1 + side2 + side3;
 
-        int perimeter = side1 + side2 + side3;
-
-        System.out.println("The perimeter of the triangle is: " + perimeter);
+      System.out.println("The perimeter of the triangle is: " + perimeter);
+    } finally {
+      scanner.close();
     }
+  }
 }
